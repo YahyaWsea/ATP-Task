@@ -8,7 +8,7 @@ RUN npm install --global nodemon
 
 WORKDIR /app
 
-COPY package.json ./
+COPY package.json package-lock.json ./
 
 RUN npm i && \
   npm audit fix && \
