@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  // flex-wrap: wrap;
+  // width: 100%;
+  // justify-content: center;
+}
+
+.section_wrapper {
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 1.25em 1.75em;
+  background: #79a6e9;
+  border: 7px solid #fff;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section_one {
+  width: 80%;
+  position: relative;
+}
+
+.section_one::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #79a6e9;
+}
+
+.section_two {
+  width: 20%;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+
+  background-color: #fff;
+  position: relative;
+}
+
+.circle_wrapper::after {
+  content: '..............';
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  left: 64px;
+}
+
+.step {
+  display: flex;
+  // justify-items: center;
+  align-items: center;
+}
+
+.dots {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.msg_container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  // flex-wrap: wrap;
+  width: 100%;
+  // justify-content: center;
+}
+
+.msg_error {
+  color: red;
+}

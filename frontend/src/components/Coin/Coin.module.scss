@@ -1,0 +1,20 @@
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+
+  background-color: #fff;
+  position: relative;
+}
+
+// .circle_wrapper::after {
+//   content: '..............';
+//   position: absolute;
+//   top: 12px;
+//   bottom: 0;
+//   left: 64px;
+// }
