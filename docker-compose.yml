@@ -14,8 +14,8 @@ services:
       start_period: 20s
     ports:
       - '27018:27017'
-    volumes:
-      - 'mongo-data:/data/db'
+    # volumes:
+    #   - 'mongo-data:/data/db'
     environment:
       - MONGODB_USERNAME=admin
       - MONGODB_PASSWORD=P@ssw0rd
